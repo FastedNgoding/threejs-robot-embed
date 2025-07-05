@@ -1,65 +1,71 @@
 # 🤖 3D Robot Viewer (Embeddable)
 
-This is a lightweight and responsive **3D Robot Viewer** using [Three.js](https://threejs.org).  
-You can embed it into any website using `<iframe>` and control the 3D model interactively.
+This is a lightweight and responsive **3D Robot Viewer** built using [Three.js](https://threejs.org).  
+You can embed this viewer in your website using an `<iframe>`, and interact with the 3D robot model in real-time.
 
 ---
 
 ## 🔥 Features
 
-- ✅ Real-time 3D rendering of a robot model  
-- ✅ Transparent background (for iframe integration)  
-- ✅ Auto-rotation with user interaction support  
-- ✅ Adjustable zoom and camera angle  
-- ✅ Fully responsive layout for desktop and mobile
+- ✅ Real-time 3D rendering of a `.glb` robot model  
+- ✅ Transparent background (iframe-ready)  
+- ✅ Smooth auto-rotation with smart controls  
+- ✅ Zoom and angle limits  
+- ✅ Fully responsive design
 
 ---
 
-## 🚀 How to Use
+## 🚀 Live Demo (Embed Link)
 
-### 1. Clone or Download the Repository
-
-```bash
-git clone https://github.com/FastedNgoding/3D-Robot-Viewer-Embed.git
-```
-
-### 2. Open in Live Server
-
-Use [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in VSCode,  
-or serve manually using:
-
-```bash
-npx serve .
-```
-
-> Make sure to use a local server because `GLTFLoader` requires proper CORS headers.
-
-### 3. Embed in Your Website
+👉 [View Online](https://fastedngoding.github.io/threejs-robot-embed/models/)
 
 ```html
 <iframe 
-  src="https://yourdomain.com/3D-Robot-Viewer-Embed/index.html"
+  src="https://fastedngoding.github.io/threejs-robot-embed/models/"
   width="100%" 
   height="500" 
   style="border: none;">
 </iframe>
 ```
 
-Replace `https://yourdomain.com/` with your actual hosting URL (e.g. Vercel, Netlify, or your own domain).
+---
+
+## 🧑‍💻 How to Use Locally (Git Clone)
+
+Follow the steps below to run it locally on your machine:
+
+### 🔧 Requirements
+
+- Git
+- VS Code or any text editor
+- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) (recommended) or `npx serve`
+
+### 📦 Steps
+
+```bash
+# Clone the repo
+git clone https://github.com/FastedNgoding/threejs-robot-embed.git
+
+# Move to the folder containing the viewer
+cd threejs-robot-embed/models
+
+# Run the viewer using Live Server or local server
+# Option A (recommended): use VS Code → Right click on index.html → "Open with Live Server"
+# Option B (terminal):
+npx serve .
+```
+
+Then open the browser at `http://localhost:3000` (or whichever port appears).
 
 ---
 
-## 📦 Tech Stack
+## 🧰 Built With
 
 - [Three.js](https://threejs.org/)
-- `GLTFLoader` for loading `.glb` robot
-- `OrbitControls` for interaction
-- Pure HTML / JavaScript
+- `GLTFLoader` for loading `.glb` models
+- `OrbitControls` for camera interaction
+- Vanilla HTML, CSS, JavaScript
 
 ---
 
-## 🌐 Demo
-
-👉 [https://nazri.developer.li/robot-viewer](https://nazri.developer.li/robot-viewer)
-
----
+> “Every line of code is a creation, and coding is a unique form of art.”
