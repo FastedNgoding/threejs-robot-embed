@@ -1,16 +1,17 @@
 # 🤖 3D Robot Viewer (Embeddable)
 
-This project is a lightweight and responsive **3D robot viewer** built with [Three.js](https://threejs.org). It allows you to load and display GLB models, specifically the expressive robot model, and is optimized for embedding into any website using an `<iframe>`.
+This is a lightweight and responsive **3D Robot Viewer** using [Three.js](https://threejs.org).  
+You can embed it into any website using `<iframe>` and control the 3D model interactively.
 
 ---
 
 ## 🔥 Features
 
-- ✅ Real-time interactive 3D robot
-- ✅ Transparent and responsive canvas
-- ✅ Auto-rotate with user controls
-- ✅ GLB model loader (RobotExpressive.glb)
-- ✅ Easy to embed anywhere via `<iframe>`
+- ✅ Real-time 3D rendering of a robot model  
+- ✅ Transparent background (for iframe integration)  
+- ✅ Auto-rotation with user interaction support  
+- ✅ Adjustable zoom and camera angle  
+- ✅ Fully responsive layout for desktop and mobile
 
 ---
 
@@ -20,49 +21,45 @@ This project is a lightweight and responsive **3D robot viewer** built with [Thr
 
 ```bash
 git clone https://github.com/FastedNgoding/3D-Robot-Viewer-Embed.git
-2. Open with Live Server (Recommended)
-You can use Live Server in VS Code, or serve manually with:
+```
 
-bash
-Salin
-Edit
+### 2. Open in Live Server
+
+Use [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in VSCode,  
+or serve manually using:
+
+```bash
 npx serve .
-3. Embed in Your Website
-To embed the viewer, use the following HTML snippet:
+```
 
-html
-Salin
-Edit
+> Make sure to use a local server because `GLTFLoader` requires proper CORS headers.
+
+### 3. Embed in Your Website
+
+```html
 <iframe 
   src="https://yourdomain.com/3D-Robot-Viewer-Embed/index.html"
-  width="100%"
-  height="500"
+  width="100%" 
+  height="500" 
   style="border: none;">
 </iframe>
-Replace https://yourdomain.com/... with your actual hosting URL.
+```
 
-📦 Technologies Used
-Three.js
-
-GLTFLoader
-
-OrbitControls
-
-HTML5 / JavaScript
-
-🌐 Demo
-Check the live demo at:
-👉 https://nazri.developer.li/robot-viewer
-
-✨ Author
-Made with ❤️ by Nazri (FastedNgoding)
-
-“Every line of code is a form of art, and coding is a creative journey.”
-
-yaml
-Salin
-Edit
+Replace `https://yourdomain.com/` with your actual hosting URL (e.g. Vercel, Netlify, or your own domain).
 
 ---
 
-Let me know if you want to add badges, deployment instructions (like for GitHub Pages), or support for multiple models.
+## 📦 Tech Stack
+
+- [Three.js](https://threejs.org/)
+- `GLTFLoader` for loading `.glb` robot
+- `OrbitControls` for interaction
+- Pure HTML / JavaScript
+
+---
+
+## 🌐 Demo
+
+👉 [https://nazri.developer.li/robot-viewer](https://nazri.developer.li/robot-viewer)
+
+---
