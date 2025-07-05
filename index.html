@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Robot Viewer - README</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    code, pre {
+      background-color: #eee;
+      padding: 0.4em 0.8em;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+    iframe {
+      border: 1px solid #ccc;
+      margin-top: 1rem;
+    }
+    .box {
+      background: #fff;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>🤖 3D Robot Viewer (Embeddable)</h1>
+    <p>This is a lightweight and responsive <strong>3D Robot Viewer</strong> built using <a href="https://threejs.org" target="_blank">Three.js</a>.</p>
+    <p>You can embed this viewer in your website using an <code>&lt;iframe&gt;</code>, and interact with the 3D robot model in real-time.</p>
+
+    <h2>🚀 Live Demo (Embed Link)</h2>
+    <p><a href="https://fastedngoding.github.io/threejs-robot-embed/models/" target="_blank">View Online</a></p>
+    <pre><code>&lt;iframe 
+  src="https://fastedngoding.github.io/threejs-robot-embed/models/"
+  width="100%" 
+  height="500" 
+  style="border: none;"&gt;
+&lt;/iframe&gt;
+</code></pre>
+
+    <h2>🧑‍💻 How to Use Locally (Git Clone)</h2>
+    <h3>🔧 Requirements</h3>
+    <ul>
+      <li>Git</li>
+      <li>VS Code or any text editor</li>
+      <li><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live Server</a> or <code>npx serve</code></li>
+    </ul>
+
+    <h3>📦 Steps</h3>
+    <pre><code># Clone the repo
+git clone https://github.com/FastedNgoding/threejs-robot-embed.git
+
+# Move to the folder containing the viewer
+cd threejs-robot-embed/models
+
+# Run with Live Server or any HTTP server
+npx serve .
+</code></pre>
+
+    <h2>📁 Folder Structure</h2>
+    <pre><code>threejs-robot-embed/
+└── models/
+    └── index.html  ← Main 3D robot viewer
+</code></pre>
+
+    <h2>🧰 Built With</h2>
+    <ul>
+      <li><a href="https://threejs.org" target="_blank">Three.js</a></li>
+      <li>GLTFLoader</li>
+      <li>OrbitControls</li>
+      <li>HTML, CSS, JS</li>
+    </ul>
+
+    <h2>👨‍💻 Author</h2>
+    <p>Made with ❤️ by <a href="https://nazri.developer.li" target="_blank"><strong>Nazri (FastedNgoding)</strong></a></p>
+    <blockquote>“Every line of code is a creation, and coding is a unique form of art.”</blockquote>
+  </div>
+</body>
+</html>
